@@ -26,15 +26,15 @@ $(function() {
 		body.scrollTop(0);
 	});
 
-	$(window).scroll(function(event) {
-		let startpage = body.scrollTop();
-		if(startpage > 10)
-		{
-			$('header .banner-top').addClass('fixed');
-		}
-		else{
-			$('header .banner-top').removeClass('fixed');
-		}
-		console.log(startpage);
-	});
+	// $(window).scroll(function(event) {
+	// 	let startpage = body.scrollTop();
+	// 	if(startpage > 10)
+	// 	{
+	// 		$('header .banner-top').addClass('fixed');
+	// 	}
+	// 	else{
+	// 		$('header .banner-top').removeClass('fixed');
+	// 	}
+	// 	console.log(startpage);
+	// });
 });
