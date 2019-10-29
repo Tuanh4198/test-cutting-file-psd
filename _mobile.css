@@ -1,3 +1,8 @@
+@media (min-width: 1200px){
+	.container{
+		max-width: 1180px;
+	}
+}
 @media only screen and (max-width: 1024px){
 	body{
 		width: 100%;
@@ -21,8 +26,33 @@
 		padding-top: 70px !important;
     	padding-left: 70px !important;
 	}
+	.content-2 .tabs{
+		height: auto !important;
+	}
+	section.content-2 .service{	display: none !important;}
+	section.content-2 .service.active{
+		display: flex !important;
+		justify-content: space-around !important;
+		position: relative !important;
+	}
 }
 /*end 1024px*/
+
+@media only screen and (max-width: 992px){
+	header .banner-top .main-menu ul{
+		display: none;
+	}
+	header .banner-top .logo{
+		padding-left: 10%;
+	}
+	header .banner-top .main-menu .logo-menu{
+		visibility: visible;
+		text-align: right;
+    	font-size: 20px;
+    	padding: 0 5%;
+	}
+}
+/*end 992*/
 
 @media only screen and (max-width: 768px){
 	header .nut .class-to-style{
@@ -41,9 +71,6 @@
     	font-size: 20px;
     	padding: 0 5%;
 	}
-	.content-2 .tabs{
-		height: 633px !important;
-	}
 	section.content-3 .els-3 .el-3 .text h4{
 		font-size: 11px !important;
 		margin-bottom: 10px;
@@ -54,26 +81,40 @@
 		transition: 0.2s;
 	}
 	.content-4 .cover{
-		background-position: center right !important;
-		padding: 0 !important;
+		background-image: -webkit-linear-gradient(top, #f4f5f9 0%, white 100%) !important;
+		padding: 100px !important;
 	}
-	.cover .content-4-child{display: none; opacity: 0;}
 	.content-4 .btn-control-cover{
 		visibility: visible !important;
 		text-align: right;
 		padding: 20px;
 		font-size: 30px;
 		color: grey;
+		display: none;
 	}
 	footer .row{
 		width: 100%;
 		margin: 0; 
 	}
 	footer .row .col-12{margin-bottom: 15px; }
+	section.content-2 .service .sv{
+		width: calc(100%/2 - 60px/2)!important; 
+	}
+	section.content-3 .els-3 .el-3{
+		width: calc(100%/1 - 40px/1) !important;
+	    margin: auto;
+	    margin-bottom: 10px;
+	}
 }
 /*end 768px*/
+@media only screen and (max-width: 585px){
+	.content-1 .els .el .el_content{
+		padding: 10px !important;
+	}
+}
+/*end 576*/
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
 	header .nut .class-to-style{
 		font-size: 15px !important;
 	}
@@ -84,17 +125,6 @@
 	.content-1 .els .el{
 		width: 100% !important;
 		margin-bottom: 20px;
-	}
-	section.content-2 .service .sv{
-		width: calc(100%/2 - 60px/2)!important; 
-	}
-	.content-2 .tabs{
-		height: 1294px !important;
-	}
-	section.content-3 .els-3 .el-3{
-		width: calc(100%/1 - 40px/1) !important;
-	    margin: auto;
-	    margin-bottom: 10px;
 	}
 	.content-4 .cover{
 		background-position: -490px center !important;
@@ -120,18 +150,17 @@
 		width: calc(100%/1 - 60px/1)!important; 
 		margin: auto;
 	}
-	.content-2 .tabs{
-		height: 3948px !important;
-	}
 	section.content-5 .login .input input{
 		width: 87% !important;
+	}
+	.content-4 .cover{		
+		background-image: -webkit-linear-gradient(top, #f4f5f9 0%, white 100%) !important;
+		padding: 50px 5px !important;
 	}
 }
 /*end 375px*/
 
-@media only screen and (max-width: 320px){
-	.content-2 .tabs{
-		height: 3383px !important;
-	}
+@media only screen and (max-width: 360px){
+
 }
 /*end 320px*/

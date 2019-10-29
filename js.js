@@ -4,11 +4,11 @@ $(function() {
 	let tab = $(".content-2 .tabs .service");
 	let up_btn = $("body .up");
 	let body = $('body,html');
-	
+	let control_menu = $("header .main-menu .logo-menu i");
 
-	console.log(tab_btn);
-	console.log(tab);
-	console.log(up_btn);
+	// console.log(tab_btn);
+	// console.log(tab);
+	// console.log(up_btn);
 
 	// slick slider
 	$(".slides").slick({
@@ -31,11 +31,11 @@ $(function() {
 		// console.log(tab.eq(vitritab));
 	});
 
-	up_btn.click(function(event) {
+	up_btn.click(function() {
 		/* Act on the event */
-		// console.log("da ok");
-		body.scrollTop(0);	
+		$('html,body').animate({scrollTop: 0}, 1000);
 	});
+	
 
 	// $(window).scroll(function(event) {
 	// 	let startpage = body.scrollTop();
@@ -48,4 +48,11 @@ $(function() {
 	// 	}
 	// 	console.log(startpage);
 	// });
+
+	
+	control_menu.on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		$("header .banner-top .main-menu ul").toggleClass('start-menu');
+	});
 });
