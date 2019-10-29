@@ -1,8 +1,36 @@
-/*@import url("_mobile.css");*/
+@import url("_mobile.css");
 
 *{
 	margin: 0;
 	padding:0;
+}
+
+header .nut, .class-to-style {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 45%;
+    font-size: 50px;
+    padding: 0 20px;
+    margin: auto;
+    left: 0;
+}
+
+header .slick-dots {
+    position: absolute;
+    bottom: 20px;
+}
+
+header .slick-dots button {
+    color: #666666;
+}
+
+header .slick-dots .slick-active button {
+    border: 2px solid #ff26b0;
+    border-radius: 50px;
+    padding: 0px;
+    background-color: #80808000;
 }
 
 header .carousel-indicators li {
@@ -207,7 +235,7 @@ footer p {
     text-transform: uppercase;
     height: 35px;
 }
-footer .col-sm-3 >span {
+footer .col-sm-6 >span {
     margin-bottom: 35px;
     font-size: 16px;
     text-transform: uppercase;
@@ -215,6 +243,16 @@ footer .col-sm-3 >span {
     position: relative;
     display: block;
     font-weight: 600;
+}
+
+footer .col-sm-6 >span:after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: #c5c5c7;
+    bottom: 0;
+    left: 0;
 }
 
 footer .col-sm-3 >span:after{
@@ -325,7 +363,7 @@ section.content-3 .els-3 {
 }
 
 section.content-3 .els-3 .el-3 {
-    width: 380px;
+    width: calc(100%/3 - 40px/3);
     background: #f8f8f8;
     padding : 3;
     display: flex;
@@ -432,7 +470,7 @@ section.content-2 .service {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1180px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -447,11 +485,11 @@ section.content-2 .service.active {
 }
 
 section.content-2 .service .sv {
-    width: 280px;
+    width:  calc(100%/4 - 60px/4);
     margin-bottom: 30px;
     position: relative;
     transition: 0.4s;
-    height: 430px;
+    /* height: 430px; */
 }
 
 section.content-2 .service .sv:hover span {color: black;}
@@ -503,19 +541,19 @@ section.content-2 .service .sv a label {
 
 section.content-2 .service .sv img {
     width: 100%;
-    height: 357px;
+    /* height: 357px; */
 }
 
 .content-1 .els {
     display: flex;
     justify-content: space-between;
-    width: 1180px;
+    /* width: 1180px; */
 }
 
 .content-1 .els .el {
-    width: 378px;
     position: relative;
-    height: 518px;
+    width: calc(100%/3 - 40px/3);
+    /* height: 518px; */
     transition: 0.4s;
 }
 
@@ -669,6 +707,18 @@ header .main-menu ul li:nth-child(7) {
     padding: 0 10px;
 }
 
+header .main-menu ul li:nth-child(8):hover a:after {
+    opacity: 0;
+}
+
+header .main-menu ul li:nth-child(9):hover a:after {
+    opacity: 0;
+}
+
+header .main-menu ul li:nth-child(7):hover a:after {
+    opacity: 0;
+}
+
 header .main-menu ul li:nth-child(8):after {
     content: "|";
     position: absolute;
@@ -712,13 +762,13 @@ header .main-menu ul {
 
 
 header .main-menu {
-    width: 80%;
+    /*width: 80%;*/
     float: left;
     margin-top: 30px;
 }
 
 header .logo {
-    width: 20%;
+    /*width: 20%;*/
     float: left;
     margin-top: 20px;
 }
@@ -730,7 +780,7 @@ body,html{
 header{
 	width: 100%;
 	/* height: 100%; */
-	/* position: relative; */
+	position: relative;
 	justify-content: space-around;
 	display: flex;
 	overflow-x: hidden;
@@ -856,3 +906,25 @@ section.end h6 {
 }
 .up i{font-size: 20px;}
 
+.slides{
+	width: 100%;
+}
+.slides ._1slide{
+	width: 100%;
+}
+.slides ._1slide img{
+	width: 100%;
+}
+
+header .main-menu .logo-menu{visibility: hidden;}
+
+.content-4 .btn-control-cover{
+	visibility: hidden;
+	transition: 0.4s;
+
+}
+
+footer .row{
+	width: 100%;
+	margin: 0; 
+}

@@ -10,6 +10,17 @@ $(function() {
 	console.log(tab);
 	console.log(up_btn);
 
+	// slick slider
+	$(".slides").slick({
+		dots: true,
+		arrows: true,
+		accessibility: true,
+		// autoplay: true,
+		// autoplaySpeed: 1000,
+		nextArrow: '.next',
+        prevArrow: '.prev'
+	});
+
 	tab_btn.on('click', function(event) {
 		event.preventDefault();
 		tab.removeClass('active');
@@ -23,7 +34,7 @@ $(function() {
 	up_btn.click(function(event) {
 		/* Act on the event */
 		// console.log("da ok");
-		body.scrollTop(0);
+		body.scrollTop(0);	
 	});
 
 	// $(window).scroll(function(event) {

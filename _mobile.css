@@ -1,3 +1,137 @@
-body,html{
-	background-color: black;
+@media only screen and (max-width: 1024px){
+	body{
+		width: 100%;
+	}
+	.container{
+		width: 100% !important;
+	}
+	header{
+		width: 100%;
+	}
+	header .banner-top{
+		width: 100% !important;
+	}
+	header .banner-top .logo{
+		padding-left: 5%;
+	}
+	header .banner-top .main-menu{
+		padding: 0;
+	}
+	.content-4 .cover{
+		padding-top: 70px !important;
+    	padding-left: 70px !important;
+	}
 }
+/*end 1024px*/
+
+@media only screen and (max-width: 768px){
+	header .nut .class-to-style{
+		font-size: 30px !important;
+		transition: 0.4s;
+	}
+	header .banner-top .main-menu ul{
+		display: none;
+	}
+	header .banner-top .logo{
+		padding-left: 10%;
+	}
+	header .banner-top .main-menu .logo-menu{
+		visibility: visible;
+		text-align: right;
+    	font-size: 20px;
+    	padding: 0 5%;
+	}
+	.content-2 .tabs{
+		height: 633px !important;
+	}
+	section.content-3 .els-3 .el-3 .text h4{
+		font-size: 11px !important;
+		margin-bottom: 10px;
+		transition: 0.2s;
+	}
+	section.content-3 .els-3 .el-3 .text span{
+		font-size: 8px;
+		transition: 0.2s;
+	}
+	.content-4 .cover{
+		background-position: center right !important;
+		padding: 0 !important;
+	}
+	.cover .content-4-child{display: none; opacity: 0;}
+	.content-4 .btn-control-cover{
+		visibility: visible !important;
+		text-align: right;
+		padding: 20px;
+		font-size: 30px;
+		color: grey;
+	}
+	footer .row{
+		width: 100%;
+		margin: 0; 
+	}
+	footer .row .col-12{margin-bottom: 15px; }
+}
+/*end 768px*/
+
+@media only screen and (max-width: 425px){
+	header .nut .class-to-style{
+		font-size: 15px !important;
+	}
+	.content-1 .els{
+		flex-wrap: wrap !important; 
+		width: 100% !important;
+	}
+	.content-1 .els .el{
+		width: 100% !important;
+		margin-bottom: 20px;
+	}
+	section.content-2 .service .sv{
+		width: calc(100%/2 - 60px/2)!important; 
+	}
+	.content-2 .tabs{
+		height: 1294px !important;
+	}
+	section.content-3 .els-3 .el-3{
+		width: calc(100%/1 - 40px/1) !important;
+	    margin: auto;
+	    margin-bottom: 10px;
+	}
+	.content-4 .cover{
+		background-position: -490px center !important;
+	}
+	section.content-5 .login .input{width: 100% !important;}
+	section.content-5 .login .input input{width: 90% !important;}
+	.end .row{	width: 100%; margin: 0; }
+	.end .row .end-page{ 
+		padding: 10px 10px;
+		display: flex !important;
+		justify-content: center !important;
+		/*align-items: center !important;*/
+	}
+	header .banner-top .logo{margin: 0;}
+}
+/*end 425px*/
+
+@media only screen and (max-width: 375px){
+	.content-2 .menu-content ul li{
+		padding: 5px 10px !important;
+	}
+	section.content-2 .service .sv{
+		width: calc(100%/1 - 60px/1)!important; 
+		margin: auto;
+	}
+	.content-2 .tabs{
+		height: 3948px !important;
+	}
+	section.content-5 .login .input input{
+		width: 87% !important;
+	}
+}
+/*end 375px*/
+
+@media only screen and (max-width: 320px){
+	.content-2 .tabs{
+		height: 3383px !important;
+	}
+}
+/*end 320px*/
