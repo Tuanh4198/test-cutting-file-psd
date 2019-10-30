@@ -10,6 +10,9 @@
 	.container{
 		width: 100% !important;
 	}
+	header .banner-content{
+		right: 10% !important;
+	}
 	header{
 		width: 100%;
 	}
@@ -59,6 +62,10 @@
 		font-size: 30px !important;
 		transition: 0.4s;
 	}
+	header .banner-content{
+		right: 5% !important;
+		top:25% !important;
+	}
 	header .banner-top .main-menu ul{
 		display: none;
 	}
@@ -107,14 +114,37 @@
 	}
 }
 /*end 768px*/
-@media only screen and (max-width: 585px){
+@media only screen and (max-width: 640px){
+	header .banner-content{
+		right: 0% !important;
+		top: 20% !important;
+	}
+	header .banner-content h1{
+		font-size: 40px !important;
+	}
+}
+@media only screen and (max-width: 576px){
 	.content-1 .els .el .el_content{
 		padding: 10px !important;
+	}
+	header .banner-content{
+		right: -5% !important;
+		top: 20% !important;
 	}
 }
 /*end 576*/
 
 @media only screen and (max-width: 480px){
+	header .banner-content{
+		right: -15% !important;
+		top: 20% !important;
+	}
+	header .banner-content span{
+		font-size: 20px !important;
+	}
+	header .banner-content h1{
+		font-size: 30px !important;
+	}
 	header .nut .class-to-style{
 		font-size: 15px !important;
 	}
@@ -143,6 +173,9 @@
 /*end 425px*/
 
 @media only screen and (max-width: 375px){
+	header .banner-content{
+		visibility: hidden;
+	}
 	.content-2 .menu-content ul li{
 		padding: 5px 10px !important;
 	}
