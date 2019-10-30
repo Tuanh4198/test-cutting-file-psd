@@ -169,7 +169,8 @@
 	}
 	.content-1 .els{
 		flex-wrap: wrap !important; 
-		width: 100% !important;
+		width: 90% !important;
+		margin: auto;
 	}
 	.content-1 .els .el{
 		width: 100% !important;
