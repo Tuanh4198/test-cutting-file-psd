@@ -160,7 +160,11 @@
 }
 /*end 375px*/
 
-@media only screen and (max-width: 360px){
-
+@media only screen and (max-width: 320px){
+	.cover .content-4-child{
+		width: 310px !important;
+		height: auto !important;
+		margin: auto !important;
+	}
 }
 /*end 320px*/

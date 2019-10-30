@@ -71,13 +71,13 @@ header .carousel-indicators li.active:before {
 header .carousel-indicators li.active :before {/* background: none; */border: 4px solid #ff00aa;}
 body{
 	font-family: 'Montserrat', sans-serif;
-
 }
 section.content-2 .service .sv a span {
     display: block;
     font-size: 15px;
     transition: 0.4s;
     color: #5d5d5d;
+    font-family: 'Lato', sans-serif;
 }
 
 section.content-2 .service .sv a p {
@@ -112,6 +112,7 @@ section.content-2 .service .sv a.old {
     color: #ff26b0;
     font-size: 15px;
     font-weight: bolder;
+    font-family: 'Lato', sans-serif;
 }
 
 .nd .nd-1 p {
@@ -127,6 +128,7 @@ section.content-2 .service .sv a.old {
     color: #aeaeae;
     font-weight: bold;
     text-transform: lowercase;
+    font-family: 'Lato', sans-serif;
 }
 
 .nd .nd-1 a i {
@@ -144,7 +146,7 @@ section.content-2 .service .sv a.old {
 }
 
 .nd .nd-1 span {
-    color: grey;
+    /* color: grey; */
 }
 
 .icon-contact i {
@@ -186,10 +188,10 @@ footer .icon-contact {
 .contact ul li span {
     text-align: left;
     font-size: 13px;
-    color: #808090;
+    color: #333333;
     font-weight: bold;
-    /* background-color: green; */
     margin-left: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 body a:hover{text-decoration: none;}
@@ -199,13 +201,14 @@ footer .menu-footer ul {
 }
 
 footer .menu-footer ul li a {
-    color: #808090;
+    color: #333333;
     font-weight: bold;
     padding-bottom: 10px;
     display: block;
     margin-left: -15px;
     transition: 0.4s;
     font-size: 13px;
+    font-family: 'Lato', sans-serif;
 }
 
 footer .menu-footer ul li a:hover i {
@@ -382,6 +385,8 @@ section.content-3 .els-3 .el-3 .icon {
     font-size: 30px;
     color: #ff26b0;
     margin-right: 15px;
+    /* display: flex; */
+    line-height: 0;
 }
 
 section.content-3 .els-3 .el-3 .text span {
