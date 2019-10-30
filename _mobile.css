@@ -66,6 +66,9 @@
 		float: right !important;
 		font-size: 22px;
 	}
+	header .main-menu ul li:nth-child(8) span{
+		left: 25px ;
+	}
 }
 /*end 992*/
 
