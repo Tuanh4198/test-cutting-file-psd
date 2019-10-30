@@ -55,6 +55,17 @@
     	padding: 0 5%;
     	line-height: 0;
 	}
+	header .main-menu ul{background-color: white !important;	}
+	header .main-menu ul li:after{display: none;}
+	header .main-menu ul li{
+		margin: 0 !important;
+		text-align: left !important;
+		padding: 5px 10px !important;
+	}
+	header .main-menu ul li i{
+		float: right !important;
+		font-size: 22px;
+	}
 }
 /*end 992*/
 
@@ -136,6 +147,12 @@
 /*end 576*/
 
 @media only screen and (max-width: 480px){
+	header .logo img{
+		/*margin-top: 10px !important; */
+	}
+	header .banner-top .main-menu{
+		margin-top: 20px !important;
+	}
 	header .banner-content{
 		right: -15% !important;
 		top: 20% !important;
@@ -159,8 +176,10 @@
 	}
 	.content-4 .cover{
 		background-position: -490px center !important;
+		padding: 0 15px !important;
 	}
-	section.content-5 .login .input{width: 100% !important;}
+	.cover .content-4-child h2{font-size: 28px !important;}
+	section.content-5 .login .input{width: 90% !important;}
 	section.content-5 .login .input input{width: 90% !important;}
 	.end .row{	width: 100%; margin: 0; }
 	.end .row .end-page{ 
@@ -169,7 +188,10 @@
 		justify-content: center !important;
 		/*align-items: center !important;*/
 	}
-	header .banner-top .logo{margin: 0;}
+	.end{padding: 0 !important;}
+	section.content-2{padding: 0 !important;}
+	section.content-2 .menu-content li{font-size: 13px !important;}
+	section.content-2{margin-bottom: 30px !important; }
 }
 /*end 425px*/
 
@@ -185,11 +207,11 @@
 		margin: auto;
 	}
 	section.content-5 .login .input input{
-		width: 87% !important;
+		width: 85% !important;
 	}
 	.content-4 .cover{		
 		background-image: -webkit-linear-gradient(top, #f4f5f9 0%, white 100%) !important;
-		padding: 50px 5px !important;
+		padding: 0px 5px !important;
 	}
 }
 /*end 375px*/
