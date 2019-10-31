@@ -49,6 +49,20 @@ $(function() {
 	// });
 
 	// nut hiện menu ở màn điện thoai 
+
+	// Hieenj nuts load ddaafu trang
+	$(window).scroll(function(event){
+		let startpage = body.scrollTop();
+		if(startpage > 200)
+		{
+			up_btn.addClass('up-active');		
+		}
+		else if(startpage < 200){
+			up_btn.removeClass('up-active');	
+		}
+		console.log(startpage);
+	});
+
 	control_menu.on('click', function(event) {
 		event.preventDefault();
 		/* Act on the event */

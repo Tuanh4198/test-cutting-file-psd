@@ -1,8 +1,8 @@
 @import url("_mobile.css");
 
 *{
-	margin: 0;
-	padding:0;
+    margin: 0;
+    padding:0;
 }
 
 span {}
@@ -72,7 +72,7 @@ header .carousel-indicators li.active:before {
 
 header .carousel-indicators li.active :before {/* background: none; */border: 4px solid #ff00aa;}
 body{
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 section.content-2 .service .sv a span {
     display: block;
@@ -92,9 +92,9 @@ section.content-2 .service .sv a.old {
     width: 100px;
 }
 .container{
-	max-width: 1180px;
-	margin: auto;
-	padding: 0;
+    max-width: 1180px;
+    margin: auto;
+    padding: 0;
 }
 
 .nd-1 {
@@ -123,6 +123,7 @@ section.content-2 .service .sv a.old {
     margin-bottom: 0;
     font-size: 14px;
     height: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nd .nd-1 a {
@@ -239,7 +240,7 @@ footer {
 footer p {
     margin-bottom: 35px;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     height: 35px;
 }
 footer .col-sm-6 >span {
@@ -263,13 +264,13 @@ footer .col-sm-6 >span:after {
 }
 
 footer .col-sm-3 >span:after{
-	position: absolute;
-	content: "";
-	width: 20px;
-	height: 2px;
-	background-color: #aaaaaa;
-	bottom: 0px;
-	left: 0;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #aaaaaa;
+    bottom: 0px;
+    left: 0;
 }
 
 section.content-5 {
@@ -399,7 +400,7 @@ section.content-3 .els-3 .el-3 .text span {
 }
 
 section.content-3 .els-3 .el-3 .text h4 {
-    color: #555555;
+    color: #000000;
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -423,7 +424,7 @@ section.content-2 .menu-content ul li {
     position: relative;
     width: auto;
     padding: 5px 30px;
-    color: #8c8c8c;
+    color: #666666;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
@@ -508,33 +509,33 @@ section.content-2 .service .sv {
 section.content-2 .service .sv:hover span {color: black;}
 
 section.content-2 .service .sv:nth-child(1):after{
-	content: "NEW";
-	position: absolute;
-	top:20px;
-	left: 20px;
-	width: 50px;
-	height: 25px;
-	background-color: #b8b8b8;
-	text-align: center;
-	line-height: 25px;
-	color: white;
-	font-weight: bold;
-	font-size: 12px;
+    content: "NEW";
+    position: absolute;
+    top:20px;
+    left: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: #b8b8b8;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 section.content-2 .service .sv:nth-child(3):after{
-	content: "NEW";
-	position: absolute;
-	top:20px;
-	left: 20px;
-	width: 50px;
-	height: 25px;
-	background-color: #7ac1f7;
-	text-align: center;
-	line-height: 25px;
-	color: white;
-	font-weight: bold;
-	font-size: 12px;
+    content: "NEW";
+    position: absolute;
+    top:20px;
+    left: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: #7ac1f7;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 section.content-2 .service .sv a {
@@ -545,7 +546,7 @@ section.content-2 .service .sv a {
     font-weight: bold;
 }
 
-section.content-2 .service .sv a .old{color: #b6b6b6;text-decoration: line-through;margin-right: 5px;}
+section.content-2 .service .sv a .old{color: #cccccc;text-decoration: line-through;margin-right: 5px;}
 
 section.content-2 .service .sv a label {
     color: #ff26b0;
@@ -598,6 +599,7 @@ section.content-2 .service .sv img {
 .content-1 .els .el .el_content h4 {
     font-size: 25px;
     font-weight: 600;
+    color: black;
 }
 
 .content-1 .els .el img {
@@ -703,23 +705,37 @@ header .main-menu ul li {
     margin-left: 25px;
 }
 
+header .main-menu ul li.hover a:after {
+    opacity: 1;
+}
+
+header .main-menu ul li a:after {
+    opacity: 1;
+}
+
+header .main-menu ul li.hover a {
+    color: #ff26b0 !important;
+}
+
 header .main-menu ul li a {
-	display: block;
-	/* width: auto; */
-	color: #333333;
-	transition: 0.4s;
-	font-weight: 600;
-	text-transform: uppercase;
-	/* visibility: hidden; */
-	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
-	}
+    display: block;
+    /* width: auto; */
+    color: #333333;
+    transition: 0.4s;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* visibility: hidden; */
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    /* line-height: 37px; */
+    }
 
 header .main-menu ul li:nth-child(7):after {content: "|";position: absolute;right: 0;top: 0;/* padding: 0; */}
 
 header .main-menu ul li:nth-child(8) {
     padding-right: 15px;
     margin: 0;
+    line-height: 15px;
 }
 
 header .main-menu ul li:nth-child(8) span {
@@ -745,6 +761,7 @@ header .main-menu ul li:nth-child(8):before {
 header .main-menu ul li:nth-child(7) {
     padding-right: 15px;
     margin-left: 25px;
+    line-height: 15px;
 }
 
 header .main-menu ul li:nth-child(8):hover a:after {
@@ -770,6 +787,7 @@ header .main-menu ul li:nth-child(8):after {
 header .main-menu ul li:nth-child(9) {
     padding: 0;
     margin: 0;
+    line-height: 15px;
 }
 
 header .main-menu ul li a:after {
@@ -816,30 +834,30 @@ header .logo {
     margin-top: 20px;
 }
 body,html{
-	width: 100%;
-	height: 100%;
-	transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
 }
 header{
-	width: 100%;
-	position: relative;
-	justify-content: space-around;
-	display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
 }
 .content_2{
-	width: 100%;
-	height: auto;
-	padding: 70px;
+    width: 100%;
+    height: auto;
+    padding: 70px;
 }
 .content-4 .cover{
-	background-image: url(images/anhcuoi_03.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center top;
-	/* height: 460px; */
-	padding-top: 115px;
-	padding-left: 115px;
-	padding-bottom: 100px;
+    background-image: url(images/anhcuoi_03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* height: 460px; */
+    padding-top: 115px;
+    padding-left: 115px;
+    padding-bottom: 100px;
 }
 
 .content-4 .cover .price {
@@ -905,6 +923,7 @@ header{
 .content-4 .cover .price .new {
     font-size: 25px;
     color: #ff26b0;
+    margin-left: 15px;
 }
 
 .content-4 .cover .price .old {
@@ -912,9 +931,9 @@ header{
     font-size: 22px;
 }
 .end{
-	width: 100%;
-	height: auto;
-	padding: 30px 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
 }
 
 section.end p,h6 {
@@ -930,91 +949,93 @@ section.end h6 {
 }
 
 .content-2 .tabs{
-	width: 100%;
-	position: relative;
-	height: 890px;
+    width: 100%;
+    position: relative;
+    height: 890px;
 }
 
 .up{
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	background-color: #c5c5c7;
-	color: white;
-	width: 40px;
-	height: 40px;
-	border-radius: 50px;
-	text-align: center;
-	line-height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #c5c5c7;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0; transition: 0.4s;
 }
-.up i{font-size: 20px;}
+.up i{font-size: 20px; }
+.up.up-active{opacity: 1;}
 
 .slides{
-	width: 100%;
+    width: 100%;
 }
 .slides ._1slide{
-	width: 100%;
-	position: relative;
+    width: 100%;
+    position: relative;
 }
 .slides ._1slide img{
-	width: 100%;
+    width: 100%;
 }
 
 header .main-menu .logo-menu{
-	visibility: hidden; 
-	position: relative;
+    visibility: hidden; 
+    position: relative;
 }
 header .main-menu .logo-menu i{cursor: pointer;}
 
 .content-4 .btn-control-cover{
-	visibility: hidden;
-	transition: 0.4s;
+    visibility: hidden;
+    transition: 0.4s;
 }
 
 footer .row{
-	width: 100%;
-	margin: 0; 
+    width: 100%;
+    margin: 0; 
 }
 .slick-slider .slick-dots li button:before{
-	display: none;
+    display: none;
 }
 .slick-slider .slick-dots li button{
-	width: 8px;
-	height: 8px;
-	padding: 0;
-	border-radius: 50%;
-	background: #666666;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    background: #666666;
 }
 .slick-slider .slick-dots li.slick-active  button{
-	width: 12px;
-	height: 12px;
-	border:solid 2px #ff00aa;
-	background: transparent;
+    width: 12px;
+    height: 12px;
+    border:solid 2px #ff00aa;
+    background: transparent;
 }
 header .banner-top .main-menu ul.start-menu{
-	display: flex;
-	flex-wrap: wrap;
-	position: absolute;
-	top: 35px;
-	right: 0;
-	width: 200px;
-	background-color: #c5c5c77a;
-	z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 200px;
+    background-color: #c5c5c77a;
+    z-index: 1;
 }
 header .banner-top .main-menu ul.start-menu li{
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .end .row{
-	width: 100%;
-	margin: 0;
+    width: 100%;
+    margin: 0;
 }
 .end .row .end-page{
-	/*padding-left: 10px; */
+    /*padding-left: 10px; */
 }
 .slick-dotted.slick-slider{
-	margin: 0 !important;
-}	
+    margin: 0 !important;
+}   
