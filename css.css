@@ -5,7 +5,76 @@
     padding:0;
 }
 
-span {}
+.child-menu-2 {
+    position: absolute;
+    width: 600px;
+    background-color: white;
+    top: 26px;
+    left: -10px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: 0.4s;
+}
+
+.child-menu-2 >ol {
+    width: 150px;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.child-menu-2 >ol li a:after {
+    /* opacity: 0; */
+    visibility: hidden;
+}
+
+.child-menu-2 >ol a {
+    padding: 5px -0;
+    margin: 10px;
+    height: 31px;
+}
+
+.child-menu-2 ol >a:after {
+    display: none;
+}
+
+.child-menu._2 ol {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child-menu._2 ol >li {
+    width: 150px;
+    height: 43px;
+}
+
+.child-menu ol {
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 200px;
+    left: -10px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    display: none;
+}
+
+.child-menu ol li >a:after {
+    opacity: 0;
+    display: none !important;
+}
+
+.child-menu ol li a {
+    margin: 10px;
+    padding: 5px 0;
+}
 
 header .nut, .class-to-style {
     position: absolute;
@@ -442,10 +511,6 @@ section.content-2 .menu-content ul li:focus li:before {
     opacity: 1;
 }
 
-section.content-2 .menu-content ul .active:before {}
-
-section.content-2 .menu-content ul .active:before {}
-
 section.content-2 .menu-content ul li.active-btn{
     color: #f94ebc;
 }
@@ -691,13 +756,11 @@ header .banner-top.fixed .main-menu a {
     font-size: 18px;
 }
 
-header .banner-top.fixed .main-menu li:hover a {
+header .banner-top.fixed .main-menu >li:hover a {
     color: #ff26b0;
 }
 
-ul.text-right {}
-
-header .main-menu ul li {
+header .main-menu ul >li {
     /* display: block; */
     /* padding: 0 10px; */
     color: #333333;
@@ -705,32 +768,43 @@ header .main-menu ul li {
     margin-left: 25px;
 }
 
-header .main-menu ul li.hover a:after {
+header .main-menu ul >li:hover .child-menu-2 {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+
+header .main-menu ul >li:hover ol {
+    visibility: visible;
+    opacity: 1;
+    top: 26px;
+    display: block;
+    /* transition: 0.4s; */
+}
+
+header .main-menu ul >li.hover >a:after {
     opacity: 1;
 }
 
-header .main-menu ul li a:after {
-    opacity: 1;
+header .main-menu ul li >a:after {
+    /* opacity: 1; */
 }
 
-header .main-menu ul li.hover a {
+header .main-menu ul li.hover >a {
     color: #ff26b0 !important;
 }
 
-header .main-menu ul li a {
+header .main-menu ul li >a {
     display: block;
-    /* width: auto; */
     color: #333333;
     transition: 0.4s;
     font-weight: 600;
     text-transform: uppercase;
-    /* visibility: hidden; */
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    /* line-height: 37px; */
     }
 
-header .main-menu ul li:nth-child(7):after {content: "|";position: absolute;right: 0;top: 0;/* padding: 0; */}
+header .main-menu ul >li:nth-child(7):after {content: "|";position: absolute;right: 0;top: 0;/* padding: 0; */}
 
 header .main-menu ul li:nth-child(8) {
     padding-right: 15px;
@@ -758,7 +832,7 @@ header .main-menu ul li:nth-child(8):before {
     right: 10px;
 }
 
-header .main-menu ul li:nth-child(7) {
+header .main-menu ul >li:nth-child(7) {
     padding-right: 15px;
     margin-left: 25px;
     line-height: 15px;
@@ -776,7 +850,7 @@ header .main-menu ul li:nth-child(7):hover a:after {
     opacity: 0;
 }
 
-header .main-menu ul li:nth-child(8):after {
+header .main-menu ul >li:nth-child(8):after {
     content: "|";
     position: absolute;
     right: 0;
@@ -790,7 +864,7 @@ header .main-menu ul li:nth-child(9) {
     line-height: 15px;
 }
 
-header .main-menu ul li a:after {
+header .main-menu ul li >a:after {
     content: "";
     display: block;
     margin-top: 3px;

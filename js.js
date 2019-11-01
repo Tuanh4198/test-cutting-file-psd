@@ -58,7 +58,7 @@ $(function() {
 			up_btn.addClass('up-active');		
 		}
 		else if(startpage < 200){
-			up_btn.removeClass('up-active');	
+			up_btn.removeClass('up-active')('up-active');	
 		}
 		console.log(startpage);
 	});
@@ -67,5 +67,20 @@ $(function() {
 		event.preventDefault();
 		/* Act on the event */
 		$("header .banner-top .main-menu ul").toggleClass('start-menu');
+	});
+
+	$(document).ready(function(){
+	  $(up_btn).hover(function(){
+	    $(this).css("background-color", "yellow");
+	    }, function(){
+	    $(this).css("background-color", "pink");
+	  });
+	});
+
+
+console.log($('.main-menu ul li'));
+	$('.main-menu li .child-menu-2').slideUp();
+	$('.main-menu ul >li').click(function(event) {
+		$(this).next('.child-menu-2').slideToggle();
 	});
 });
